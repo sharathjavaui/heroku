@@ -12,6 +12,10 @@ app.get("/", function(req,res) {
     res.render("pages/index")
 })
 
+app.get("/about", function(req,res) {
+    res.render("pages/about")
+});
+
 app.listen(app.get("port"), function(){
     console.log("app is running on "+ app.get("port"))
 })
